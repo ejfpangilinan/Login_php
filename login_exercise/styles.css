@@ -1,0 +1,124 @@
+
+
+* {
+	font-family: Roboto;
+	font-weight: bold;
+}
+
+body{
+	height: 100%;
+	background: url("bg.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.sign{
+	width: 250px;
+	border-radius: 10px;
+	padding: 30px;
+	background: white;
+	box-shadow: 0px 0px 20px 3px #888888;
+}
+
+
+@media only screen and (min-width: 100px) {
+	.sign{
+		width: 300px;
+		border-radius: 10px;
+		padding: 30px;
+		background: white;
+		box-shadow: 0px 0px 20px 3px #888888;
+	}
+
+}
+
+@media only screen and (min-width: 900px) {
+	.sign{
+		width: 350px;
+		border-radius: 10px;
+		padding: 30px;
+		background: white;
+		box-shadow: 0px 0px 20px 3px #888888;
+	}
+
+}
+
+
+
+.page-content{
+	display: flex;
+	text-align: center;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+
+
+.signup{
+	font-family: Rock Salt;
+	font-weight: bolder;
+	color: #5b5b5b;
+	padding-bottom: 20px;
+}
+
+
+.s-entry{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	border-radius: 10px;
+
+}
+
+
+.login_button{
+	width: 100%;
+	position: relative;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #154167;
+    border: 0px inset #154167;
+}
+
+.line {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 20px 0 20px; 
+} 
+
+.line span{ 
+    background:#fff; 
+    padding:0 10px; 
+    margin-top: 20px;
+}
+
+
+.sign_button{
+	width: 100%;
+	position: relative;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #9bcfea;
+    border: 0px inset #9bcfea;
+}
+
+
+.log_link{
+	color: #9bcfea;
+}
+
+a:hover {
+   text-decoration: none;
+}

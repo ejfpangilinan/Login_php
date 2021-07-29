@@ -5,11 +5,12 @@ session_start();
 extract($_POST);
 
 include("config.php");
-$sql=mysqli_query($link,"SELECT * FROM users where username='$name' and password='$pass'");
+
+$sql=mysqli_query($link,"SELECT * FROM users where username='$name'");
 
 $row  = mysqli_fetch_array($sql);
 
-if(is_array($row))
+if(is_array($row) and password_verify($pass, $row['password']))
 {
     
     $_SESSION["id"] = $row['id'];

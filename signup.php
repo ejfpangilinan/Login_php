@@ -27,10 +27,8 @@
 
 
         try {
-
-            $password = password_hash($pass, PASSWORD_BCRYPT);
-
-            $query="INSERT INTO users(email, username, password) VALUES ('$email', '$name', '$password')";
+            
+            $query="INSERT INTO users(email, username, password) VALUES ('$email', '$name', sha1('$pass'))";
             $nque = mysqli_query($link,$query) or die("Could Not Perform the Query");
             echo '<script>alert("Success!")</script>';
             echo '<script>window.location.href="login_page.php";</script>;';
